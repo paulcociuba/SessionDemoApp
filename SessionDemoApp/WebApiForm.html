@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web API Static form tester</title>
+    <link href="MainStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="paragraphStandardLeft">
+        <h1>Web API Static Form test with JQuery</h1>
+        <br />
+        <div class="DivInlineBlock" style="width: 30px">
+
+        </div>
+        <div class="DivInlineBlock fieldSetDefault DivVerticalTop" style="width: 420px">
+
+            <strong>Simple GET request to WebAPI controller</strong>
+            <br />
+            <br />
+            <button id="btnAsyncGet" class="roundButton blueButton">Show Date Time</button>
+
+
+        </div>
+        <div class="DivInlineBlock" style="width: 20px">
+            &nbsp;
+        </div>
+        <div class="DivInlineBlock fieldSetDefault DivVerticalTop" style="width: 420px">
+            
+            <strong>POST request with payload attached</strong>
+            <br />
+            <br />
+            <input id="inpOption" class="textBoxLarge" type="number" style="width: 300px" />
+            <button id="btnAsyncPost" class="roundButton greenButton">Send Post Parse</button>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="DivInlineBlock" style="width: 30px">
+
+        </div>
+        <div class="DivInlineBlock fieldSetDefault DivVerticalTop" style="width: 420px">
+            <strong>Results of GET requests:</strong>
+            <br />
+            <div id="divGetRequests">
+
+            </div>
+        </div>
+        <div class="DivInlineBlock" style="width: 20px">
+            &nbsp;
+        </div>
+        <div class="DivInlineBlock fieldSetDefault DivVerticalTop" style="width: 420px">
+            <strong>Results of POST param requests:</strong>
+            <br />
+            <div id="divGetRequestsParam">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script>
+        function ajaxEchoDate() {
+
+            //also select the div where the echoed text should be placed
+            var displayDiv = $("#divGetRequests");
+
+           
+            $.ajax({
+                url: "/api/Values",
+                type: "GET",
+                contentType: "application/json",
+                dataType: 'json',
+                success: function (data) {
+                   
+                    //set the innerHtml of the target div to the data coming back from the controller
+                    displayDiv.html(displayDiv.html() + "<br />" + data);
+
+                },
+            });
+        }
+
+
+        function ajaxPostParseDate() {
+            //attempt to select the textbox control using jquery
+            var inputValue = $("#inpOption");
+
+            //also select the div where the echoed text should be placed
+            var displayDiv = $("#divGetRequestsParam");
+
+            var jsonPostDateParam = '"' + inputValue.val() + '"';
+            //jsonPostDateParam.dataParam = inputValue.val();
+            //{
+            //    dateParam: inputValue.val()
+            //}
+
+            $.ajax({
+                url: "/api/Values",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                data: jsonPostDateParam,
+                success: function (data, status) {
+                 
+                    //set the innerHtml of the target div to the data coming back from the controller
+                    displayDiv.html(displayDiv.html() + "<br />" + data);
+
+                    //finally, clear the textarea of the text
+                    inputValue.val('');
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            $("#btnAsyncGet").click(
+                function () {
+                    //call function to perform ajax postback to web-api
+                    ajaxEchoDate();
+                });
+
+            $("#btnAsyncPost").click(
+                function () {
+                    //call function to perform ajax postback to web-api
+                    ajaxPostParseDate();
+                });
+
+        });
+
+    </script>
+</body>
+</html>

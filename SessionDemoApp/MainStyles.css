@@ -1,0 +1,872 @@
+﻿body
+{
+	background-color: #FCFCFC;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+a:hover
+{
+	font-family: Tahoma;
+	color: #3399FF;
+	text-align: left;
+	text-decoration: underline;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+
+a:visited
+{
+	color: #000066;
+}
+
+
+h1
+{
+    font-family: Tahoma;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    color: #800000; /* needed to remove space after the heading tag */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h2
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal; 
+	font-variant: normal;
+	color: #800000;
+	
+	/* needed to remove space after the heading tag */
+    margin-bottom : 0px;
+    padding-bottom: 0px;
+}
+
+
+.ContainerDiv {
+    background-position: right bottom;
+    max-width: 800px;
+    background-image: url('Images/CurlShadow.jpg');
+    background-repeat: no-repeat;
+    padding-bottom: 18px;
+    padding-right: 18px;
+}
+
+.NoteDiv {
+    padding: 10px;
+    border: 1px solid #C0C0C0;
+    min-height: 400px;
+}
+
+
+.Table100
+{
+    width: 100%;
+}
+
+
+.TableTitleCell
+{
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #000066;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+
+.TableSysMessage
+{
+	border: 1px solid #C0C0C0;
+	padding: 2px 5px 2px 5px;
+}
+
+
+.TableTopAlignedCell
+{
+	vertical-align: top;
+}
+
+
+.TableMiddleAlignedCell
+{
+	text-align: center;
+}
+
+
+.PanelAlignedCenter
+{
+	text-align: center;
+}
+
+
+.PanelNaviBarFrame
+{
+	position: absolute;
+	left: 0px;
+	z-index: 10;
+	bottom: 0px;
+}
+
+
+.PanelFloatingFrame
+{
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	z-index: 20;
+	width: 1100px;
+	height: 700px;
+}
+
+
+.PanelFloatingEmailFrame
+{
+	position: fixed;
+	left: 150px;
+	z-index: 30;
+	width: 900px;
+	top: 120px;
+}
+
+
+/* Banner upper section for LinqTo.me version 2 */
+
+.BannerRightCell
+{
+	background-image: url('Images/Banner/ShortLinksBannerRight5.jpg');
+	background-repeat: repeat-x;
+}
+
+.BannerCentralCell
+{
+	background-image: url('Images/Banner/ShortLinksBanner5.jpg');
+	background-repeat: no-repeat;
+	width: 1100px;
+	height: 55px;
+}
+
+.BannerLeftCell
+{
+	background-image: url('Images/Banner/ShortLinksBannerLeft5.jpg');
+	background-repeat: repeat-x;
+}
+
+/* end of banner section for version 2 */
+
+/* Legacy banner section for version 1 */
+
+.logoHeaderCell
+{
+	background-image: url('Images/Banner/ShortLinksBanner4.jpg');
+	background-repeat: no-repeat;
+	width: 880px;
+	height: 194px;
+	vertical-align: middle;
+}
+
+
+.transparentLogoImage
+{
+	margin-left: 37px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+.masterContentCell
+{
+	background-image: url('Images/Banner/ContentBackground4.jpg');
+	background-repeat: repeat-y;
+	height: 750px;
+	vertical-align: top;
+}
+
+
+.bottomHeaderCell
+{
+	background-image: url('Images/Banner/LowerBorder4.jpg');
+	background-repeat: no-repeat;
+	width: 880px;
+	height: 27px;
+	vertical-align: top;
+}
+
+/* End of section 1 legacy banner styles */
+
+
+/* Main Master Content Cell Background Elements for version 2 */
+
+.ContentUppercell
+{
+	background-image: url('Images/ContentBackground/ContentUpper2.jpg');
+	background-repeat: no-repeat;
+	width: 850px;
+	height: 30px;
+}
+
+
+.ContentMiddleCell
+{
+	background-image: url('Images/ContentBackground/ContentMiddle2.jpg');
+	background-repeat: repeat-y;
+	width: 850px;
+	height: 570px;
+	vertical-align: top;
+}
+
+
+.ContentLowerCell
+{
+	background-image: url('Images/ContentBackground/ContentLower2.jpg');
+	background-repeat: no-repeat;
+	width: 850px;
+	height: 30px;
+}
+
+/* End of Main Master Content Section for version 2 */
+
+
+.paragraphStandardLeft
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: left;
+}
+
+
+.paragraphStandardCenter
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: center;
+}
+
+
+
+.paragraphStandardRight
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: right;
+}
+
+
+.tabContentCell
+{
+	background-image: url('Images/TabBackground.gif');
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 34px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.paragraphBold
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: left;
+}
+
+
+/* Font Faces for Linq To Me Logo for version 2 */
+
+.paragraphLogoLinksBlue
+{
+	font-family: Tahoma;
+	font-size: 11pt;
+    color: #000066;
+    font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+}
+
+
+.paragraphLogoLinksRed
+{
+	font-family: Tahoma;
+	font-size: 11pt;
+    color: #FF0000;
+    font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+}
+
+
+.paragraphSubHeading
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #C0C0C0;
+	text-align: left;
+}
+
+/* End of Font Faces for version 2 */
+
+
+.paragraphBoldLarge
+{
+	font-family: Tahoma;
+	font-size: medium;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: left;
+}
+
+
+.confirmationok
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	color: #568E1A;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+.confirmationpending
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	color: #FF3300;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+.confirmationerror
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #FF0000;
+	text-align: left;
+}
+
+
+.detailsViewCell
+{
+	border: 1px solid #FFFFFF;
+	padding: 2px 8px 2px 8px;
+}
+
+
+.detailsViewCellSysMessage
+{
+	border: 0px solid #FFFFFF;
+	padding: 2px 90px 2px 90px;
+}
+
+
+.gridViewCell
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-style: none;
+	border-left-style: none;
+	border-style: solid none solid none;
+	border-width: 1px 0px 1px 0px;
+	border-color: #DCDCDC;
+	padding: 4px 8px 4px 8px;
+}
+
+
+.gridViewCellHeader
+{
+	padding: 2px 8px 6px 8px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Tahoma;
+	color: #0033CC;
+}
+
+
+.paragraphSmallGrayLink
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #666666;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.paragraphStandardLink
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #0033CC;
+	text-align: left;
+	text-decoration: underline;
+}
+
+
+.paragraphStandardSearchLink
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #0033CC;
+	text-align: left;
+	text-decoration: underline;
+}
+
+
+.paragraphStandardLinkNoULine
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #0033CC;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.paragraphStandardLinkNoULineLarge
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #0033CC;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.paragraphGreenLink
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #568E1A;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.paragraphWatermark
+{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #C0C0C0;
+	font-family: Tahoma;
+	font-size: medium;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #999999;
+	text-align: left;
+}
+
+
+.paragraphWatermarkSmall
+{
+	padding: 1px;
+	margin: 2px;
+	border: 1px solid #C0C0C0;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+}
+
+
+.paragraphStandardInput
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #000080;
+	text-align: left;
+}
+
+
+.paragraphLargeInput
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #000080;
+	text-align: left;
+}
+
+
+.paragraphSubTitle
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #000080;
+	text-align: left;
+}
+
+
+.paragraphNoteTitle
+{
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #800000;
+	text-align: left;
+}
+
+
+.paragraphStandardInputBold
+{
+	font-family: Tahoma;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #568E1A;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.paragraphTitle
+{
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #000066;
+	text-align: left;
+}
+
+
+
+.textBoxStandard
+{
+	padding: 1px;
+	margin: 2px;
+	border: 1px solid #C0C0C0;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #666666;
+}
+
+.textBoxExtended
+{
+	padding: 1px;
+	margin: 2px;
+	border: 1px solid #C0C0C0;
+}
+
+
+.textBoxLarge {
+    /* Positioning */
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #C0C0C0;
+    font-family: Helvetica;
+    font-size: medium;
+    font-weight: bold;
+    font-variant: normal;
+    color: #808080;
+    font-style: normal;
+}
+
+
+    .textBoxLarge:focus {
+        /* Positioning */
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #9ecaed;
+        font-family: Helvetica;
+        font-size: medium;
+        font-weight: bold;
+        font-variant: normal;
+        color: #003399;
+        font-style: normal;
+        /* CSS 3 box shadow effect */
+        -moz-box-shadow: 0 0 10px #9ecaed;
+        -webkit-box-shadow: 0 0 10px #9ecaed;
+        -ms-box-shadow: 0 0 10px #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
+
+    .textBoxLarge:placeholder-shown {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        color: #999999;
+    }
+
+
+    .textBoxLarge:-ms-input-placeholder {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        color: #999999;
+    }
+
+
+.roundButton {
+    padding: 5px 10px 5px 10px;
+    margin: 3px;
+    /* border radius */
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    color: #FFFFFF;
+}
+
+.roundLinkButton {
+    padding: 5px 10px 5px 10px;
+    margin: 3px;
+    /* border radius */
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.blueButton {
+    border-color: #269abc;
+    /*background-color: #39b3d7;*/
+    background: #2DB9E3;
+    background: linear-gradient(to bottom right, #2DB9E3, #1A7C9D);
+}
+
+    .blueButton:hover {
+        border-color: #29A7CB;
+        background: #62C2DF;
+        background: linear-gradient(to bottom right, #62C2DF, #2DB9E3);
+        /* Box shadow */
+        -moz-box-shadow: 0 0 6px #9ecaed;
+        -webkit-box-shadow: 0 0 6px #9ecaed;
+        -ms-box-shadow: 0 0 6px #9ecaed;
+        box-shadow: 0 0 6px #9ecaed;
+        /* Needed for when style is applied to anchor tags */
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.greenButton {
+    border-color: #339966;
+    /*background-color: #20AE4F;*/
+    background: #15B94B;
+    background: linear-gradient(to bottom right, #15B94B, #087A2E);
+}
+
+    .greenButton:hover {
+        border-color: #38A971;
+        background: #25C759;
+        background: linear-gradient(to bottom right, #25C759, #15B94B);
+        /* Box shadow */
+        -moz-box-shadow: 0 0 6px #8CEAAB;
+        -webkit-box-shadow: 0 0 6px #8CEAAB;
+        -ms-box-shadow: 0 0 6px #8CEAAB;
+        box-shadow: 0 0 6px #8CEAAB;
+        cursor: pointer;
+    }
+
+.redButton {
+    border-color: #ac2925;
+    /*background-color: #d2322d;*/
+    background: #DE2642;
+    background: linear-gradient(to bottom right, #DE2642, #81120E);
+}
+
+    .redButton:hover {
+        border-color: #C82F2B;
+        background: #DA5350;
+        background: linear-gradient(to bottom right, #DA5350, #DE2642);
+        /* Box shadow */
+        -moz-box-shadow: 0 0 6px #EA9F9D;
+        -webkit-box-shadow: 0 0 6px #EA9F9D;
+        -ms-box-shadow: 0 0 6px #EA9F9D;
+        box-shadow: 0 0 6px #EA9F9D;
+        cursor: pointer;
+    }
+
+
+.menuCell
+{
+	border: 1px solid #CCCCCC;
+}
+
+
+.advancedImageFrame
+{
+	border: 1px solid #CCCCCC;
+	margin: 4px;
+	padding: 4px;
+	background-color: #FAFAFA;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Modal Popup Styles */
+.modalBackground 
+{
+	background-color:Gray;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+}
+
+.modalPopup
+{
+	border: 1px solid Gray;
+	background-color: #FFFFFF;
+	padding: 3px;
+	width: 450px;
+	height: 100px;
+	text-align: center;
+}
+
+.modalPopup
+{
+	border: 1px solid Gray;
+	background-color: #FFFFFF;
+	padding: 3px;
+	width: 450px;
+	height: 100px;
+	text-align: center;
+}
+
+/* End of Modal Popup region */
+
+
+/* Field Set Style region */
+
+.fieldSetDefault
+{
+	padding: 6px;
+	border: 1px solid #E1E1E1;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+/* End Field Set Style region */
+
+/* div styling options */
+
+DivLeft {
+    float: left;
+}
+
+.DivTextCenter {
+    text-align: center;
+}
+
+.DivVerticalTop{
+    vertical-align: top;
+}
+
+
+.DivInlineBlock {
+    display: inline-block;
+}
+
+.CenteredContentDiv {
+    margin: 0 auto;
+    width: 720px;
+    /* positioning */
+    padding: 85px 15px 15px 15px;
+}
+
+
+/* end of div styling options */
+
+/* warning div styles from bootstrap */
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+    .alert-warning hr {
+        border-top-color: #f7e1b5;
+    }
+
+    .alert-warning .alert-link {
+        color: #66512c;
+    }
+
+/* end of warning styles from bootstrap */
+
+

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SessionDemoApp {
-    
-    
-    public partial class SessionMaddness {
-        
+namespace SessionDemoApp
+{
+
+
+    public partial class SessionMaddness
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// scriptManager control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager scriptManager;
-        
+
         /// <summary>
         /// lblSessionID control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSessionID;
-        
+
         /// <summary>
         /// lblProcessID control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblProcessID;
-        
+
         /// <summary>
         /// udppSessionContents control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdateProgress udppSessionContents;
-        
+
         /// <summary>
         /// udpSessionContents control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel udpSessionContents;
-        
+
         /// <summary>
         /// txtSessionContents control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSessionContents;
-        
+
         /// <summary>
         /// txtSessionAdd control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSessionAdd;
-        
+
         /// <summary>
         /// cmdAddContent control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdAddContent;
-        
+
         /// <summary>
         /// cmdRefreshContent control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdRefreshContent;
-        
+
         /// <summary>
         /// lblLastRefreshTime control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLastRefreshTime;
-        
+
         /// <summary>
         /// udppLongOperation control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdateProgress udppLongOperation;
-        
+
         /// <summary>
         /// udpLongOperation control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel udpLongOperation;
-        
+
         /// <summary>
         /// txtLatencyTime control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLatencyTime;
-        
+
         /// <summary>
         /// cmdInduceLatency control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdInduceLatency;
-        
+
         /// <summary>
         /// cmdInduceLatencyAsync control.
         /// </summary>
@@ -155,7 +157,16 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdInduceLatencyAsync;
-        
+
+        /// <summary>
+        /// cmdBlockAsyncLatency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cmdBlockAsyncLatency;
+
         /// <summary>
         /// lblDelayOperation control.
         /// </summary>
@@ -164,7 +175,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDelayOperation;
-        
+
         /// <summary>
         /// udpRedirectExpiration control.
         /// </summary>
@@ -173,7 +184,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel udpRedirectExpiration;
-        
+
         /// <summary>
         /// txtRedirectUrl control.
         /// </summary>
@@ -182,7 +193,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRedirectUrl;
-        
+
         /// <summary>
         /// cmdRedirect control.
         /// </summary>
@@ -191,7 +202,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdRedirect;
-        
+
         /// <summary>
         /// lblRedirectEngaged control.
         /// </summary>
@@ -200,7 +211,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRedirectEngaged;
-        
+
         /// <summary>
         /// udppDateTime control.
         /// </summary>
@@ -209,7 +220,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdateProgress udppDateTime;
-        
+
         /// <summary>
         /// tmrTimeRefresh control.
         /// </summary>
@@ -218,7 +229,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.Timer tmrTimeRefresh;
-        
+
         /// <summary>
         /// udpDateTime control.
         /// </summary>
@@ -227,7 +238,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel udpDateTime;
-        
+
         /// <summary>
         /// lblStartDateTime control.
         /// </summary>
@@ -236,7 +247,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStartDateTime;
-        
+
         /// <summary>
         /// lblEndDateTime control.
         /// </summary>
@@ -245,7 +256,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEndDateTime;
-        
+
         /// <summary>
         /// cmdGetDateTime control.
         /// </summary>
@@ -254,7 +265,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdGetDateTime;
-        
+
         /// <summary>
         /// cmdAutoRefreshDateTime control.
         /// </summary>
@@ -263,7 +274,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdAutoRefreshDateTime;
-        
+
         /// <summary>
         /// udpDamageSession control.
         /// </summary>
@@ -272,7 +283,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel udpDamageSession;
-        
+
         /// <summary>
         /// cmdDamageSession control.
         /// </summary>
@@ -281,7 +292,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdDamageSession;
-        
+
         /// <summary>
         /// cmdDamageSessionAsync control.
         /// </summary>
@@ -290,7 +301,7 @@ namespace SessionDemoApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdDamageSessionAsync;
-        
+
         /// <summary>
         /// lblDamagedSession control.
         /// </summary>

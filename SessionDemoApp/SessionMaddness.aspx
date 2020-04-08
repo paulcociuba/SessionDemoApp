@@ -1,6 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SessionMaddness.aspx.cs" Inherits="SessionDemoApp.SessionMaddness" Async="true" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void cmdInduceLatencyBlock_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -73,7 +81,10 @@
                             Desired Latency: <asp:TextBox ID="txtLatencyTime" runat="server" TextMode="Number" Width="200px" CssClass="textBoxLarge" />
                             <br />
                             <asp:Button ID="cmdInduceLatency" runat="server" Text="Run Operation" CssClass="roundButton redButton" OnClick="cmdInduceLatency_Click" />
+                            
                             <asp:Button ID="cmdInduceLatencyAsync" runat="server" Text="Run Async" CssClass="roundLinkButton" OnClick="cmdInduceLatencyAsync_Click" />
+                            
+                            <asp:Button ID="cmdBlockAsyncLatency" runat="server" Text="Run & Block" CssClass="roundLinkButton" OnClick="cmdBlockAsyncLatency_Click" />
                             <br />
                             <br />
                             <asp:Label ID="lblDelayOperation" runat="server" ViewStateMode="Disabled" />

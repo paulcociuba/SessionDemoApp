@@ -32,6 +32,16 @@ namespace SessionDemoApp
                 manager = new SessionContentManager(Session);
                 serviceManager = new ServiceManager();
             }
+            else
+            {
+                //check the session if it has content anyways - if there is contents in the session
+                if (Session.Contents.Count != 0)
+                {
+                    manager = new SessionContentManager(Session);
+                    //display any content inside the textbox
+                    txtSessionContents.Text = manager.RetrieveSessionContent();
+                }
+            }
         }
 
         protected void cmdAddContent_Click(object sender, EventArgs e)
@@ -77,6 +87,18 @@ namespace SessionDemoApp
         {
             //register an async callback to the service manager
             RegisterAsyncTask(new PageAsyncTask(PerformServiceManageCallAsync));
+        }
+
+
+        protected void cmdBlockAsyncLatency_Click(object sender, EventArgs e)
+        {
+            //check if the service manager is not null and call with the requested delay
+            if (serviceManager != null && !String.IsNullOrWhiteSpace(txtLatencyTime.Text))
+            {
+                //generate a deadlock
+                lblDelayOperation.Text = "Operation completed at: " + DateTime.Now.ToLongTimeString() + " - Result was: " +
+                    serviceManager.CallServiceAsync(uint.Parse(txtLatencyTime.Text.Trim())).Result;
+            }
         }
 
 
@@ -180,5 +202,7 @@ namespace SessionDemoApp
                 }
             }
         }
+
+
     }
 }

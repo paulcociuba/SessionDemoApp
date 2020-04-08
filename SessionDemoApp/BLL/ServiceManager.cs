@@ -34,6 +34,9 @@ namespace Utilities
             //attempt to perform the same operation in an async fashion
             var response = await serviceClient.DelayResponseAsync((int)delayResponse);
 
+            //induce a further 20 second delay here
+            System.Threading.Thread.Sleep(20000);
+
             //return the body of the response
             return response.Body.DelayResponseResult;
         }

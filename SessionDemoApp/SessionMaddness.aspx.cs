@@ -44,6 +44,8 @@ namespace SessionDemoApp
             }
         }
 
+        #region Session Content Add / Display handling code
+
         protected void cmdAddContent_Click(object sender, EventArgs e)
         {
             //attempt to add the content if the session manager is not null and if the
@@ -71,6 +73,11 @@ namespace SessionDemoApp
                 lblLastRefreshTime.Text = "Last refresh: " + DateTime.Now.ToLongTimeString();
             }
         }
+
+        #endregion
+
+
+        #region Web-Service Lateny inducing code
 
         protected void cmdInduceLatency_Click(object sender, EventArgs e)
         {
@@ -110,6 +117,12 @@ namespace SessionDemoApp
                 await serviceManager.CallServiceAsync(uint.Parse(txtLatencyTime.Text.Trim()));
         }
 
+
+        #endregion
+
+
+        #region Date-Time refresh / auto-refresh code
+
         protected void cmdGetDateTime_Click(object sender, EventArgs e)
         {
             //set the date and time for start and end of execution
@@ -148,6 +161,11 @@ namespace SessionDemoApp
         }
 
 
+        #endregion
+
+
+        #region Session contents damaging code
+
         protected void cmdDamageSession_Click(object sender, EventArgs e)
         {
             //check if the service manager is not and attempt to damage the session
@@ -182,6 +200,10 @@ namespace SessionDemoApp
             }
         }
 
+        #endregion
+
+        #region Redirection damaging code
+
         protected void cmdRedirect_Click(object sender, EventArgs e)
         {
             //place a variable in the session indicating where to redirect
@@ -203,6 +225,6 @@ namespace SessionDemoApp
             }
         }
 
-
+        #endregion
     }
 }

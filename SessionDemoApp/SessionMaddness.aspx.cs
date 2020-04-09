@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
@@ -200,6 +201,16 @@ namespace SessionDemoApp
             }
         }
 
+        protected void cmdDamageSessionAsyncCrash_Click(object sender, EventArgs e)
+        {
+            //check if the manager is not null, and then fire off a background trhead
+            if(manager != null)
+            {
+                manager.DamageSessionAndDie();
+                lblDamagedSession.Text = "Please wait for about 10 seconds for REAL a surprise...";
+            }
+        }
+
         #endregion
 
         #region Redirection damaging code
@@ -226,5 +237,7 @@ namespace SessionDemoApp
         }
 
         #endregion
+
+        
     }
 }

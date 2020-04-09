@@ -10,6 +10,7 @@ using System.Web.SessionState;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Utilities
 {
@@ -116,16 +117,44 @@ namespace Utilities
         public void DamageSessionAsync()
         {
             //create a task so we can run this on another thread and also, configure an await false,
-            //so we can create a fire and forget solution
+            //so we can create a fire and forget solution           
             Task damageSessionTask = 
                 Task.Run(() => 
                 {
                     //induce a wait of 10 seconds
-                    System.Threading.Thread.Sleep(10000);
+                    Thread.Sleep(10000);
 
                     //damage the session
                     DamageSession();
+
+                    //now try and read back the contents of the session
+                    string content = RetrieveSessionContent();
                 });
+
+            //fire the task away and forget about it
+            damageSessionTask.ConfigureAwait(false);
+
+        }
+
+
+        public void DamageSessionAndDie()
+        {
+            Thread backgroundThread = new Thread(() =>
+            {
+                //induce a wait of 10 seconds
+                Thread.Sleep(10000);
+
+                //damage the session in an async manner
+                int damagedIndex = DamageSession();
+
+                //now try and read back the contents of the session
+                string content = RetrieveSessionContent();
+            })
+            {
+                //mark the thread as a background thread
+                IsBackground = true
+            };
+            backgroundThread.Start();
         }
 
 

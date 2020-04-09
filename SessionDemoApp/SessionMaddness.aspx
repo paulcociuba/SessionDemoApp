@@ -165,7 +165,10 @@
                     <ContentTemplate>
 
                         <asp:Button ID="cmdDamageSession" runat="server" Text="Damage Session" CssClass="roundButton redButton" OnClick="cmdDamageSession_Click" />
+                        
                         <asp:Button ID="cmdDamageSessionAsync" runat="server" Text="Damage Async" CssClass="roundLinkButton" OnClick="cmdDamageSessionAsync_Click" />
+
+                        <asp:Button ID="cmdDamageSessionAsyncCrash" runat="server" Text="Damage & Die" CssClass="roundLinkButton" OnClick="cmdDamageSessionAsyncCrash_Click" />
 
                         <br />
                         <br />
